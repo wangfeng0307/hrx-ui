@@ -1,8 +1,8 @@
 {
-  "name": "lime-ui",
+  "name": "hrx-ui",
   "version": "1.0.0",
-  "description": "another light weight vue.js component library",
-  "main": "lib/lime-ui.min.js",
+  "description": "ui component library for vue.js",
+  "main": "lib/hrx-ui.min.js",
   "dependencies": {
     "async-validator": "^3.0.4",
     "core-js": "2.6.9",
