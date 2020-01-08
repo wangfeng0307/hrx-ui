@@ -1,5 +1,5 @@
 <template>
-  <button class="lime-button" :class="{[`lime-button-${type}`]: true}" type="button">
+  <button class="hrx-button" :class="{[`hrx-button-${type}`]: true}" type="button">
     <slot></slot>
   </button>
 </template>

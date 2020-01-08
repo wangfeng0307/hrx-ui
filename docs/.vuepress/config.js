@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'LimeUI',
-  base: '/lime-ui/',
+  title: 'HrxUI',
+  base: '/hrx-ui/',
   description: 'another lightweight ui toolkit for Vue.js 2.X',
   port: 8083, 
   themeConfig: {
@@ -24,10 +24,7 @@ module.exports = {
           title: '基础组件',
           collapsable: false,
           children: [
-            'basic/button',
-            'basic/input',
-            'basic/form',
-            'basic/notice'
+            'basic/button'
           ]
         },
       ]
