@@ -1,11 +1,5 @@
-<p align="center">
-    <a>
-        <img width="200" src="./assets/logo.png">
-    </a>
-</p>
-
 <h1>
-LimeUI
+HrxUI
     <h3>A lightweight Vue.js UI toolkit</h3>
 </h1>
 
@@ -13,7 +7,7 @@ LimeUI
 
 Run the command below in your terminal to install limeUI first
 ```
-npm install lime-ui --save
+npm install hrx-ui --save
 ```
 
 # Usage
@@ -21,10 +15,10 @@ npm install lime-ui --save
 ## Global Use
 Import in your entry script file and register it
 ```javascript
-import LimeUI from 'lime-ui'
-import "lime-ui/lib/styles/lime-ui.css"
+import HrxUI from 'hrx-ui'
+import "hrx-ui/lib/styles/hrx-ui.css"
 
-Vue.use(LimeUI)
+Vue.use(HrxUI)
 ```
 
 ### Example
@@ -46,7 +40,7 @@ Configure your `.babelrc` file like this
 {
     "plugins": [
         ["component", {
-            "libraryName": "lime-ui",
+            "libraryName": "hrx-ui",
             "libDir": "lib",
             "styleLibrary": {
                 "name": "styles",
@@ -62,7 +56,7 @@ The you can import component on demand, and you don't need to care about importi
 
 ```javascript
 import Vue from 'vue'
-import { Button } from 'lime-ui'
+import { Button } from 'hrx-ui'
 
 Vue.component('a-button', Button)
 ```
