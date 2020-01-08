@@ -14,8 +14,8 @@ module.exports = merge(webpackBaseConfig, {
   output: {
     path: path.resolve(__dirname, '../lib'),
     publicPath: '/lib/',
-    filename: 'lime-ui.min.js',
-    library: 'lime-ui',
+    filename: 'hrx-ui.min.js',
+    library: 'hrx-ui',
     libraryTarget: 'umd',
     umdNamedDefine: true
   },

@@ -11,7 +11,7 @@ describe('Button.vue', () => {
     })
     
     let buttonElm = wrapper.element;
-    expect(buttonElm.classList.contains('lime-button-primary')).to.be.true;
+    expect(buttonElm.classList.contains('hrx-button-primary')).to.be.true;
     done()
   })
 
