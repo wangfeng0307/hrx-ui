@@ -14,17 +14,17 @@ export default {
 </script>
 
 <template>
-  <l-button>{{button}}</l-button>
-  <l-button type="primary">主色</l-button>
-  <l-button type="success">成功</l-button>
-  <l-button type="info">提示</l-button>
+  <hrx-button>{{button}}</hrx-button>
+  <hrx-button type="primary">主色</hrx-button>
+  <hrx-button type="success">成功</hrx-button>
+  <hrx-button type="info">提示</hrx-button>
 </template>
 
 
 ### 使用
 ```html
-<l-button>默认</l-button>
-<l-button type="primary">主色</l-button>
-<l-button type="success">成功</l-button>
-<l-button type="info">提示</l-button>
+<hrx-button>默认</hrx-button>
+<hrx-button type="primary">主色</hrx-button>
+<hrx-button type="success">成功</hrx-button>
+<hrx-button type="info">提示</hrx-button>
 ```

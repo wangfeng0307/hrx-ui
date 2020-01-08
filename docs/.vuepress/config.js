@@ -7,8 +7,7 @@ module.exports = {
     nav: [
       { text: '主页', link: '/' },
       { text: '组件', link: '/component/guide/introduction' },
-      { text: '主题', link: '/theme/' },
-      // { text: 'External', link: 'https://google.com' },
+      { text: '主题', link: '/theme/' }
     ],
     sidebar: {
       '/component/': [

@@ -1,7 +1,7 @@
 import Button from './packages/button'
 
 const components = {
-  lButton: Button
+  hrxButton: Button
 }
 
 const install = function (Vue, options = {}) {

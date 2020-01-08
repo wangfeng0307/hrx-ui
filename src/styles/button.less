@@ -1,8 +1,10 @@
 @charset "UTF-8";
-@import "common/var";
-@import "mixins/mixins";
+@import "common/var.less";
+@import "mixins/mixins.less";
 
-@include b(button) {
+@btn-prefix-cls: ~"@{namespace}-button";
+
+.@{btn-prefix-cls} {
   min-width: 60px;
   height: 36px;
   font-size: 14px;
@@ -26,39 +28,39 @@
     &:active,
     &:focus,
     &:hover {
-      background-color: rgba($--color-primary, 0.3);
+      background-color: fade(@--color-primary, (0.3*100));
     }
   }
+
   &-primary {
     color: #fff;
-    background-color: $--color-primary;
+    background-color: @--color-primary;
 
     &:active,
     &:focus,
     &:hover {
-      background-color: mix($--color-primary, #ccc);
+      background-color: mix(@--color-primary, #ccc);
     }
   }
 
   &-info {
     color: #fff;
-    background-color: $--color-info;
+    background-color: @--color-info;
 
     &:active,
     &:focus,
     &:hover {
-      background-color: mix($--color-info, #ccc);
+      background-color: mix(@--color-info, #ccc);
     }
   }
    &-success {
     color: #fff;
-    background-color: $--color-success;
+    background-color: @--color-success;
 
     &:active,
     &:focus,
     &:hover {
-      background-color: mix($--color-success, #ccc);
+      background-color: mix(@--color-success, #ccc);
     }
   }
 }
-
