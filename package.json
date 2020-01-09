@@ -13,6 +13,8 @@
     "@babel/core": "^7.5.5",
     "@babel/plugin-transform-runtime": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
+    "@commitlint/cli": "^8.0.0",
+    "@commitlint/config-conventional": "^8.0.0",
     "@vue/test-utils": "^1.0.0-beta.29",
     "babel-loader": "^8.0.6",
     "babel-plugin-dynamic-import-node": "^2.3.0",
@@ -35,6 +37,7 @@
     "gulp-clean-css": "^4.2.0",
     "gulp-less": "^4.0.1",
     "gulp-rename": "^1.4.0",
+    "husky": "^3.1.0",
     "karma": "^4.2.0",
     "karma-chai": "^0.1.0",
     "karma-chrome-launcher": "^3.1.0",
@@ -46,6 +49,7 @@
     "karma-webpack": "^4.0.2",
     "less": "^3.10.2",
     "less-loader": "^5.0.0",
+    "lint-staged": "^9.5.0",
     "mocha": "^6.2.0",
     "rimraf": "^3.0.0",
     "sinon": "^7.4.1",
@@ -71,6 +75,19 @@
     "test": "karma start test/karma.config.js --single-run",
     "lint": "eslint src/**/*.vue src/**/*.js src/*.js",
     "lint:style": "stylelint \"src/**/*.less\" --syntax less"
+  },
+  "lint-staged": {
+    "*.{js,vue}": [
+      "npm run lint",
+      "git add"
+    ],
+    "*.{less}": [
+      "npm run lint:style",
+      "git add"
+    ],
+    "*.{html,vue,css,less}": [
+      "git add"
+    ]
   },
   "repository": {
     "type": "git"
