@@ -51,6 +51,8 @@
     "sinon": "^7.4.1",
     "sinon-chai": "^3.3.0",
     "style-loader": "^1.0.0",
+    "stylelint": "^12.0.1",
+    "stylelint-config-standard": "^19.0.0",
     "url-loader": "^2.1.0",
     "vue-loader": "^15.7.1",
     "vue-style-loader": "^4.1.2",
@@ -67,7 +69,8 @@
     "deploy": "gh-pages -d docs/.vuepress/dist",
     "deploy:build": "npm run docs:build && npm run deploy",
     "test": "karma start test/karma.config.js --single-run",
-    "lint": "eslint src/**/*.vue src/**/*.js --quiet"
+    "lint": "eslint src/**/*.vue src/**/*.js --quiet",
+    "lint:style": "stylelint \"src/**/*.less\" --syntax less"
   },
   "repository": {
     "type": "git"
