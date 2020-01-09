@@ -15,9 +15,20 @@
     "@babel/preset-env": "^7.5.5",
     "@vue/test-utils": "^1.0.0-beta.29",
     "babel-loader": "^8.0.6",
+    "babel-plugin-dynamic-import-node": "^2.3.0",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-es5-property-mutators": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-vue-jsx": "^3.7.0",
     "chai": "^4.2.0",
     "cross-env": "^5.2.0",
     "css-loader": "2.1.1",
+    "eslint": "^6.8.0",
+    "eslint-config-elemefe": "^0.3.0",
+    "eslint-plugin-html": "^6.0.0",
+    "eslint-plugin-json": "^2.0.1",
+    "eslint-plugin-vue": "^6.1.2",
     "file-loader": "^4.2.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.0",
@@ -55,7 +66,8 @@
     "dist": "npm run test && npm run build:style && npm run build:prod && npm run build:components",
     "deploy": "gh-pages -d docs/.vuepress/dist",
     "deploy:build": "npm run docs:build && npm run deploy",
-    "test": "karma start test/karma.config.js --single-run"
+    "test": "karma start test/karma.config.js --single-run",
+    "lint": "eslint src/**/*.vue src/**/*.js --quiet"
   },
   "repository": {
     "type": "git"

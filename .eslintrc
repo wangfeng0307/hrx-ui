@@ -1,0 +1,23 @@
+{
+  "globals": {
+    "ga": true,
+    "chrome": true
+  },
+  "plugins": ["vue", "html", "json"],
+  "extends": ["plugin:vue/recommended", "elemefe"],
+  "rules": {
+    "space-before-function-paren": ["error", {
+      "anonymous": "always",
+      "named": "always",
+      "asyncArrow": "always"
+    }],
+    "semi": ["error", "never"],
+    "no-restricted-globals": ["error", "event", "fdescribe"]
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  }
+}

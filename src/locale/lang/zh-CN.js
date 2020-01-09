@@ -1,4 +1,4 @@
-import setLang from '../lang';
+import setLang from '../lang'
 
 const lang = {
   l: {
@@ -107,6 +107,6 @@ const lang = {
       emptyText: '暂无数据'
     }
   }
-};
+}
 
-export default lang;
+export default lang
