@@ -69,7 +69,7 @@
     "deploy": "gh-pages -d docs/.vuepress/dist",
     "deploy:build": "npm run docs:build && npm run deploy",
     "test": "karma start test/karma.config.js --single-run",
-    "lint": "eslint src/**/*.vue src/**/*.js --quiet",
+    "lint": "eslint src/**/*.vue src/**/*.js src/*.js",
     "lint:style": "stylelint \"src/**/*.less\" --syntax less"
   },
   "repository": {
