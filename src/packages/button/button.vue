@@ -12,7 +12,7 @@ export default {
   props: {
     type: {
       validator (value) {
-          return oneOf(value, ['default', 'primary', 'dashed', 'text', 'info', 'success', 'warning'])
+          return oneOf(value, ['default', 'primary', 'dashed', 'text', 'info', 'success', 'warning', 'error'])
       },
       type: String,
       default: 'default'
